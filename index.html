@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV numérique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon/programming.png" type="image/png">
+</head>
+
+<body class="text-white">
+    <header class="w-100 position-absolute overflow-hidden top-0">
+        <img src="img/programming.jpg" alt="Image d'un programmeur informatique qui travail sur son PC" class="w-100">
+    </header>
+
+    <div class="overflow-hidden mx-auto rounded-circle" id="profil">
+        <img src="img/profil.jpg" alt="photo de profil" class="w-100">
+    </div>
+
+    <section class="container-fluid position-absolute" id="info-contact">
+        <div class="row">
+            <div class="col text-center">
+                <a href="mailto:manson.d222@gmail.com" class="text-decoration-none">
+                    <img src="img/envelope-blanche.png" alt="envelope">
+                    <p class="fs-4 d-md-inline d-none"> : manson.d222@gmail.com</p>
+                </a>
+            </div>
+            <div class="col-md-3 col-6">
+
+            </div>
+            <div class="col text-center p-0">
+                <a href="tel:+33767542666" class="text-decoration-none">
+                    <img src="img/phone.png" alt="envelope">
+                    <p class="fs-4 d-md-inline d-none"> : 07 67 54 26 66</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center">
+        <h1 class="h2">Manson Decobecq</h1>
+        <h2 class="h1 m-3">Developpeur Web</h2>
+    </section>
+
+
+    <nav class="navbar navbar-light navbar-expand-md">
+        <button class="navbar-toggler bg-light fixed-bottom col-1" id="button-menu" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="container" id="nav-container">
+                <div class="row">
+                    <ul class="nav nav-tabs d-flex flex-md-row flex-column m-md-0 ms-4 mt-4" id="myTab" role="tablist">
+                        <li class="col nav-item my-md-0 my-3" role="presentation">
+                            <button class="nav-link active" id="skills-tab" data-bs-toggle="tab"
+                                data-bs-target="#skills" type="button" role="tab" aria-controls="skills"
+                                aria-selected="true">Compétences</button>
+                        </li>
+                        <li class="col nav-item my-md-0 my-3" role="presentation">
+                            <button class="nav-link" id="career-tab" data-bs-toggle="tab" data-bs-target="#career"
+                                type="button" role="tab" aria-controls="career" aria-selected="false">Parcours</button>
+                        </li>
+                        <li class="col nav-item my-md-0 my-3" role="presentation">
+                            <button class="nav-link" id="portfolio-tab" data-bs-toggle="tab" data-bs-target="#portfolio"
+                                type="button" role="tab" aria-controls="portfolio"
+                                aria-selected="false">Portfolio</button>
+                        </li>
+                        <li class="col nav-item my-md-0 my-3" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                        </li>
+                        <li class="col nav-item my-md-0 my-3" role="presentation">
+                            <button class="nav-link" id="strong-points-tab" data-bs-toggle="tab"
+                                data-bs-target="#strong-points" type="button" role="tab" aria-controls="strong-points"
+                                aria-selected="false">Qualités</button>
+                        </li>
+                        <li class="col nav-item my-md-0 my-3" role="presentation">
+                            <button class="nav-link" id="hobbies-tab" data-bs-toggle="tab" data-bs-target="#hobbies"
+                                type="button" role="tab" aria-controls="hobbies" aria-selected="false">Loisirs</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn-close text-reset position-absolute bg-white d-md-none"
+                data-bs-dismiss="offcanvas" aria-label="Close" id="close"></button>
+        </div>
+    </nav>
+
+
+    <!-- COMPÉTENCE -->
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+            <div class="container-md container-fluid">
+                <div class="row fs-5 m-5 px-5">
+                    <div class="col-12 col-md-6" id="language">
+                        <h3 class="ms-5 mb-5">Languages : </h3>
+                        <ul class="ms-5 d-flex flex-column">
+                            <li>
+                                <img src="img/html/html-5.png" alt="logo HTML">
+                                <p class="d-inline-block">HTML<br>
+                                    <span class="d-block">intermediaire</span>
+                                </p>
+                            </li>
+                            <li>
+                                <img src="img/css/css-3.png" alt="logo CSS">
+                                <p class="d-inline-block">CSS<br>
+                                    <span class="d-block">intermediaire</span>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="p-1" src="img/javascript/js.png" alt="logo javascript" id="js">
+                                <p class="d-inline-block">Javascript<br>
+                                    <span class="d-block">débutant</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h3 class="ms-5 mb-5">Outils : </h3>
+                        <ul class="ms-5 d-flex flex-column">
+                            <li>
+                                <img class="p-1" src="img/bootstrap/bootstrap.png" alt="logo bootstrap">
+                                <p class="d-inline-block">Bootstrap
+                                    <span class="d-block">intermediaire</span>
+                                </p>
+
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                                    class="bi bi-git" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457" />
+                                </svg>
+                                <p class="d-inline-block">Git
+                                    <span class="d-block">intermediaire</span>
+                                </p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                <p class="d-inline-block my-auto">Github
+                                    <span class="d-block my-auto">intermediaire</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PARCOURS -->
+
+        <div class="tab-pane fade" id="career" role="tabpanel" aria-labelledby="career-tab">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="career-box col-md-4 col-12 border border-2 p-5 mx-auto my-3">
+                        <h4 class="mb-3">Formation en ligne HTML et CSS</h4>
+                        <p>2021 - 2022 <br>
+                            Udemy</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#udemy-modal">
+                            + d'info
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="udemy-modal" tabindex="-1" aria-labelledby="udemy-modal-Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header border-bottom border-dark">
+                                        <h5 class="modal-title" id="udemy-modal-Label">Formation en ligne HTML et CSS</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Qand j'ai commencé cette formation </p>
+                                    </div>
+                                    <div class="modal-footer border-top border-dark">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                            Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="career-box col-md-4 col-12 border border-2 p-5 mx-auto my-3">
+                        <h4 class="mb-3">Développeur web & web mobile</h4>
+                        <p>2022 - en cours <br>
+                            La Manu - École supérieur des métiers du numérique</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#laManu-modal">
+                            + d'info
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="laManu-modal" tabindex="-1" aria-labelledby="laManu-modal-Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header border-bottom border-dark">
+                                        <h5 class="modal-title" id="laManu-modal-Label">La Manu</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        test la Manu
+                                    </div>
+                                    <div class="modal-footer border-top border-dark">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                            Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="career-box col-md-4 col-12 border border-2 p-5 mx-auto my-3">
+                        <h4 class="mb-3">CAP Maintenance de véhicules particuliers</h4>
+                        <p>2020 - 2021 <br>
+                            École des pros</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#mechanic-modal">
+                            + d'info
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="mechanic-modal" tabindex="-1" aria-labelledby="mechanic-modal-Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header border-bottom border-dark">
+                                        <h5 class="modal-title" id="mechanic-modal-Label">CAP</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        test CAP
+                                    </div>
+                                    <div class="modal-footer border-top border-dark">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                            Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PORTFOLIO -->
+
+        <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mx-auto border border-3 card-size">
+                            <a href="code/projet_perso/01_portfolio/index.html">
+                                <div class="card-body text-dark text-center p-0">
+                                    <h5 class="card-title py-2">Site portfolio</h5>
+                                    <p class="border-top border-2 border-dark">Mon premier vrai site, que j'ai codé pour
+                                        m'entrainer</p>
+                                    <img src="img/site-portfolio.png" class="card-img-top" alt="test">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <form action="">
+                <div class="container border border-dark p-5 my-5 text-dark rounded-3" id="container-contact">
+                    <div class="row">
+                        <legend>Contactez-moi :</legend>
+                        <div class="col-md col-12 text-center pe-5">
+                            <label class="d-block mt-5 mb-1" for="mail" id="info-mail">Votre adresse mail :</label>
+                            <input class="input-size mb-5 rounded-3" type="email" name="mail" id="mail">
+
+                            <label class="d-block mb-1" for="object" id="info-object">L'objet de votre mail :</label>
+                            <input class="input-size rounded-3" type="text" name="object" id="object">
+                        </div>
+
+                        <div class="col-md-6 col-12 text-md-start text-center">
+                            <label class="d-block mb-1 mt-5" for="message">Votre message :</label>
+                            <textarea class="rounded-3" name="message" id="message" cols="40" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="row my-4 text-center">
+                        <div class="d-flex justify-content-center">
+                            <input class="rounded-pill px-2 py-1" type="submit" value="Envoyer" id="send-button">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!-- QUALITÉS -->
+
+        <div class="tab-pane fade" id="strong-points" role="tabpanel" aria-labelledby="strong-points-tab">
+            <div class="container" id="quality">
+                <div class="row">
+                    <div class="col-md-5 col-12 text-center m-4 p-4">
+                        <img src="img/curieux/suspect.png" alt="image qui représente une loupe">
+                        <p class="d-inline fs-2 mx-4">Curieux</p>
+                    </div>
+                    <div class="col-md-5 col-12 text-center m-4 p-4">
+                        <img src="img/serieux/soldat.png" alt="image qui représente un soldat au garde-à-vous">
+                        <p class="d-inline fs-2 mx-4">serieux</p>
+                    </div>
+                    <div class="col-md-5 col-12 text-center m-4 p-4">
+                        <img src="img/travailleur/poste-de-travail.png"
+                            alt="image qui représente une personne assise devant son bureau en train de travailler">
+                        <p class="d-inline fs-2 mx-4">Travailleur</p>
+                    </div>
+                    <div class="col-md-5 col-12 text-center m-4 p-4">
+                        <img src="img/motivation/muscle.png"
+                            alt="image qui représente un bras qui contracte son biceps">
+                        <p class="d-inline fs-2 mx-4">Motivé</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- LOISIRS -->
+
+        <div class="tab-pane fade" id="hobbies" role="tabpanel" aria-labelledby="hobbies-tab">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-4 p-4 my-4 mx-auto border border-2">
+                        <img src="img/piano/icone-piano.png" alt="icone de piano">
+                        <p class="d-inline fs-2 mx-3">Piano</p>
+                    </div>
+                    <div class="col-4 p-4 my-4 mx-auto border border-2">
+                        <img src="img/sport/running.png" alt="icone qui représente une personne faisant du jogging">
+                        <p class="d-inline fs-2 mx-3">Sport</p>
+                    </div>
+                    <div class="col-5 p-4 my-4 mx-auto border border-2">
+                        <img src="img/manga/anime.png"
+                            alt="icone qui représente les yeux d'un personnage d'anime dans une télé">
+                        <p class="d-inline fs-2 mx-3">Manga / Anime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <span class="line bg-white w-50 d-block mx-auto mt-5 mb-4"></span>
+
+    <footer class="container-fluid text-center p-2">
+
+        <div class="row">
+            <div class="col-md col my-auto text-center">
+                <button class="mx-md-auto text-white border-white my-3 px-3 py-1 rounded-pill">télécharger en
+                    pdf</button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="mx-md-auto text-white border-white my-2 px-3 py-1 rounded-pill"
+                    data-bs-toggle="modal" data-bs-target="#graphistes-modal">
+                    Graphistes icones
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="graphistes-modal" tabindex="-1" aria-labelledby="graphistes-modal-label"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom border-dark">
+                                <h5 class="modal-title" id="graphistes-modal-label">Merci aux graphistes !</h5>
+                                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5
+                                        icons created by Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons">Css 3 icons
+                                        created by Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/free-icons/javascript"
+                                        title="javascript icons">Javascript icons created by Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/free-icons/bootstrap"
+                                        title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/free-icons/curious" title="curious icons">Curious
+                                        icons created by PIXARTIST - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/fr/icones-gratuites/linkedin"
+                                        title="linkedin icônes">Linkedin icônes créées par Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/fr/icones-gratuites/anime"
+                                        title="anime icônes">Anime icônes créées par Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/free-icons/motivation"
+                                        title="motivation icons">Motivation icons created by Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/fr/icones-gratuites/piano"
+                                        title="piano icônes">Piano icônes créées par Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/fr/icones-gratuites/pas-de-gps"
+                                        title="pas de gps icônes">Pas de gps icônes créées par Freepik - Flaticon</a>
+                                </p>
+                                <p><a href="https://www.flaticon.com/fr/icones-gratuites/soldat"
+                                        title="soldat icônes">Soldat icônes créées par max.icons - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/fr/icones-gratuites/sport"
+                                        title="sport icônes">Sport icônes créées par Freepik - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/fr/icones-gratuites/travail"
+                                        title="travail icônes">Travail icônes créées par catkuro - Flaticon</a></p>
+                            </div>
+                            <div class="modal-footer border-top border-dark">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                    Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md col-12 d-flex order-1 order-md-0 justify-content-center">
+                <p class="my-md-auto my-2">copyright © Manson Decobecq</p>
+            </div>
+
+            <div class="col-md col-3 my-auto text-start text-md-center">
+                <a href="https://www.linkedin.com/in/manson-decobecq-66b907237/" target="_blank"><img
+                        src="img/linkedin/linkedin.png" alt="logo de linkedin"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

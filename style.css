@@ -123,6 +123,10 @@ footer img{
     height: 3em;
 }
 
+#pdfLink:hover{
+    text-decoration: underline;
+}
+
 /* class */
 
 .career-box{
@@ -149,14 +153,8 @@ footer img{
     width: 1px;
 }
 
-.modal-header{
-    background-color: #7D8491;
-}
-
-.modal-body{
-    background-color: #7D8491;
-}
-
+.modal-header,
+.modal-body,
 .modal-footer{
     background-color: #7D8491;
 }

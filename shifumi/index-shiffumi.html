@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Exercice 1</title>
+</head>
+
+<body id="bodyId">
+    <header>
+        <div id="redBox">
+            <img class="pokeball" src="assets/img/pokeball.png" alt="image d'une pokeball">
+            <p id="redPoint">Red score: </p>
+            <img class="pokeball" src="assets/img/pokeball.png" alt="image d'une pokeball">
+        </div>
+        <img id="dialogue" src="assets/img/dialogue.png" alt="bulle de dialogue pokemon">
+        <h1>select your pokémon</h1>
+        <div id="blueBox">
+            <img class="pokeball" src="assets/img/pokeball.png" alt="image d'une pokeball">
+            <p id="bluePoint">Blue score: </p>
+            <img class="pokeball" src="assets/img/pokeball.png" alt="image d'une pokeball">
+        </div>
+    </header>
+    <img id="bg" src="assets/img/arena.png" alt="image d'une arene de combat pokemon">
+
+    <ul id="list">
+        <li>
+            <img class="pulsate-bck" id="rockBtn" src="assets/img/tortank.png" alt="image pixel-art de tortank">
+        </li>
+        <li>
+            <img class="pulsate-bck" id="paperBtn" src="assets/img/florizarre.png" alt="image pixel-art de florizarre">
+        </li>
+        <li>
+            <img class="pulsate-bck" id="scissorsBtn" src="assets/img/dracaufeu.png" alt="image pixel-art de dracaufeu">
+        </li>
+    </ul>
+
+    <div id="fightZone">
+
+        <img id="red" src="assets/img/Red.png" alt="image de red, un personnage de pokemon">
+
+        <div id="playerCase"></div>
+
+        <img id="versus" src="assets/img/vs.png" alt="logo versus">
+
+        <div id="computerCase"></div>
+
+        <img id="blue" src="assets/img/blue.png" alt="image de blue, un personnage de pokemon">
+    </div>
+    <button class="pulsate-bck" id="playBtn">
+        <img id="fight" src="assets/img/fight-img/fight.jpg" alt="logo fight">
+    </button>
+
+
+    <div id="victoryBox">
+        <img id="victoryDialogue" src="assets/img/dialogue.png" alt="bulle de dialogue style pokemon">
+        <h2 id="textWin"></h2>
+        <button class="pulsate-bck" id="resetBtn">
+            <img id="resetImg" src="assets/img/pokeButton2.png" alt="image zoomé d'une pokeball">
+            <span id="resetText">Play again</span>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+    <audio src="assets/mp3/tortank.ogg" id="tortankMp3"></audio>
+    <audio src="assets/mp3/florizarre.ogg" id="florizarreMp3"></audio>
+    <audio src="assets/mp3/dracaufeu.ogg" id="dracaufeuMp3"></audio>
+
+    <audio src="assets/mp3/music.mp3" id="fhtSound"></audio>
+    <audio src="assets/mp3/vChampion.mp3" id="victorySong"></audio>
+    <!-- <div class="tenor-gif-embed" data-postid="17933394" data-share-method="host" data-aspect-ratio="1.78771" data-width="100%">
+        <a href="https://tenor.com/view/confetti-celebrate-celebration-colorful-green-screen-gif-17933394">Confetti Celebrate GIF</a>
+        <a href="https://tenor.com/search/confetti-gifs">Confetti GIFs</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

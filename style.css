@@ -54,6 +54,16 @@ footer img{
     width: 2em;
 }
 
+#about-me-button{
+    background-color: #7D8491;
+    border: 2px white solid;
+    color: white;
+}
+
+#img-car{
+    width: 3em;
+}
+
 #skills ul{
     list-style: none;
 }
@@ -116,7 +126,14 @@ footer img{
 /* class */
 
 .career-box{
-    height: 17em;
+    height: 18em;
+}
+
+.info-button{
+    background-color: #7D8491;
+    border: 2px white solid;
+    color: white;
+    width: 6em;
 }
 
 .card-size{
@@ -150,14 +167,20 @@ footer img{
 
 /* media querie */
 
-@media (max-width: 768px){
+
+
+@media all and (max-width: 768px){
     header{height: 100px;}
     #profil{width: 10em; margin-top: 1em;}
     #info-contact{top: 8em;}
-    #info-contact img{width: 3em;}
     #language{border: none;}
     #frameworks{border-top: 1px white solid; padding-top: 3em;}
     .nav-tabs{border: none;}
     #container-contact{width: 25em;}
     .card-size{width: 20em;}
+}
+
+@media all and (max-width: 992px){
+        #info-contact img{width: 3em;}
+
 }

@@ -7,44 +7,72 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon/programming.png" type="image/png">
+    <link rel="icon" href="assets/img/favicon/programming.png" type="image/png">
 </head>
 
 <body class="text-white">
     <header class="w-100 position-absolute overflow-hidden top-0">
-        <img src="img/programming.jpg" alt="Image d'un programmeur informatique qui travail sur son PC" class="w-100">
+        <img src="assets/img/programming.jpg" alt="Image d'un programmeur informatique qui travail sur son PC"
+            class="w-100">
     </header>
 
     <div class="overflow-hidden mx-auto rounded-circle" id="profil">
-        <img src="img/profil.jpg" alt="photo de profil" class="w-100">
+        <img src="assets/img/profil.JPG" alt="photo de profil" class="w-100">
     </div>
 
     <section class="container-fluid position-absolute" id="info-contact">
         <div class="row">
-            <div class="col text-center">
-                <a href="mailto:manson.d222@gmail.com" class="text-decoration-none">
-                    <img src="img/envelope-blanche.png" alt="envelope">
-                    <p class="fs-4 d-md-inline d-none"> : manson.d222@gmail.com</p>
+            <div class="col text-start">
+                <a href="mailto:manson.d222@gmail.com" class="text-decoration-none mx-5">
+                    <img src="assets/img/envelope-blanche.png" alt="envelope">
+                    <p class="fs-4 d-lg-inline d-none"> : manson.d222@gmail.com</p>
                 </a>
             </div>
-            <div class="col-md-3 col-6">
-
-            </div>
-            <div class="col text-center p-0">
-                <a href="tel:+33767542666" class="text-decoration-none">
-                    <img src="img/phone.png" alt="envelope">
-                    <p class="fs-4 d-md-inline d-none"> : 07 67 54 26 66</p>
+            <div class="col text-end p-0">
+                <a href="tel:+33767542666" class="text-decoration-none mx-5">
+                    <img src="assets/img/phone.png" alt="envelope">
+                    <p class="fs-4 d-lg-inline d-none"> : 07 67 54 26 66</p>
                 </a>
             </div>
         </div>
     </section>
 
     <section class="text-center">
-        <h1 class="h2">Manson Decobecq</h1>
-        <h2 class="h1 m-3">Developpeur Web</h2>
+        <h2>Manson Decobecq</h2>
+        <h1 class="m-3">Developpeur Web</h1>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn rounded-pill" id="about-me-button" data-bs-toggle="modal"
+            data-bs-target="#about-me">
+            Info sur moi
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="about-me" tabindex="-1" aria-labelledby="about-me-Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="about-me-Label">Info sur moi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Je me présente, je m'appelle Manson, j'ai 22 ans, j'habite à Noyon, je possède le permis B et
+                            une voiture
+                            <img src="assets/img/voiture/car.png" alt="icone de voiture" id="img-car">.
+                            Ayant découvert le code à 21 ans, je me suis trouvé une passion pour cette
+                            discipline et j'ai décidé d'en faire mon métier. Curieux de nature, j'adore
+                            apprendre de nouvelles choses et me donner à fond pour accomplir mes objectifs.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
+    <!-- NAVBAR -->
     <nav class="navbar navbar-light navbar-expand-md">
         <button class="navbar-toggler bg-light fixed-bottom col-1" id="button-menu" type="button"
             data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
@@ -61,26 +89,24 @@
                                 aria-selected="true">Compétences</button>
                         </li>
                         <li class="col nav-item my-md-0 my-3" role="presentation">
-                            <button class="nav-link" id="career-tab" data-bs-toggle="tab" data-bs-target="#career"
-                                type="button" role="tab" aria-controls="career" aria-selected="false">Parcours</button>
+                            <button class="nav-link mx-md-auto" id="career-tab" data-bs-toggle="tab"
+                                data-bs-target="#career" type="button" role="tab" aria-controls="career"
+                                aria-selected="false">Parcours</button>
                         </li>
                         <li class="col nav-item my-md-0 my-3" role="presentation">
-                            <button class="nav-link" id="portfolio-tab" data-bs-toggle="tab" data-bs-target="#portfolio"
-                                type="button" role="tab" aria-controls="portfolio"
+                            <button class="nav-link mx-md-auto" id="portfolio-tab" data-bs-toggle="tab"
+                                data-bs-target="#portfolio" type="button" role="tab" aria-controls="portfolio"
                                 aria-selected="false">Portfolio</button>
                         </li>
                         <li class="col nav-item my-md-0 my-3" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                                type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-                        </li>
-                        <li class="col nav-item my-md-0 my-3" role="presentation">
-                            <button class="nav-link" id="strong-points-tab" data-bs-toggle="tab"
+                            <button class="nav-link mx-md-auto" id="strong-points-tab" data-bs-toggle="tab"
                                 data-bs-target="#strong-points" type="button" role="tab" aria-controls="strong-points"
                                 aria-selected="false">Qualités</button>
                         </li>
                         <li class="col nav-item my-md-0 my-3" role="presentation">
-                            <button class="nav-link" id="hobbies-tab" data-bs-toggle="tab" data-bs-target="#hobbies"
-                                type="button" role="tab" aria-controls="hobbies" aria-selected="false">Loisirs</button>
+                            <button class="nav-link mx-md-auto" id="hobbies-tab" data-bs-toggle="tab"
+                                data-bs-target="#hobbies" type="button" role="tab" aria-controls="hobbies"
+                                aria-selected="false">Loisirs</button>
                         </li>
                     </ul>
                 </div>
@@ -100,21 +126,27 @@
                     <div class="col-12 col-md-6" id="language">
                         <h3 class="ms-5 mb-5">Languages : </h3>
                         <ul class="ms-5 d-flex flex-column">
-                            <li>
-                                <img src="img/html/html-5.png" alt="logo HTML">
+                            <li class="col-12 mx-auto">
+                                <img src="assets/img/html/html-5.png" alt="logo HTML">
                                 <p class="d-inline-block">HTML<br>
                                     <span class="d-block">intermediaire</span>
                                 </p>
                             </li>
-                            <li>
-                                <img src="img/css/css-3.png" alt="logo CSS">
+                            <li class="col-12 mx-auto">
+                                <img src="assets/img/css/css-3.png" alt="logo CSS">
                                 <p class="d-inline-block">CSS<br>
                                     <span class="d-block">intermediaire</span>
                                 </p>
                             </li>
-                            <li>
-                                <img class="p-1" src="img/javascript/js.png" alt="logo javascript" id="js">
+                            <li class="col-12 mx-auto">
+                                <img class="p-1" src="assets/img/javascript/js.png" alt="logo javascript" id="js">
                                 <p class="d-inline-block">Javascript<br>
+                                    <span class="d-block">intermediaire</span>
+                                </p>
+                            </li>
+                            <li class="col-12 mx-auto">
+                                <img src="assets/img/php/php.png" alt="logo php">
+                                <p class="d-inline-block">PHP<br>
                                     <span class="d-block">débutant</span>
                                 </p>
                             </li>
@@ -124,14 +156,14 @@
                     <div class="col-12 col-md-6">
                         <h3 class="ms-5 mb-5">Outils : </h3>
                         <ul class="ms-5 d-flex flex-column">
-                            <li>
-                                <img class="p-1" src="img/bootstrap/bootstrap.png" alt="logo bootstrap">
+                            <li class="col-12 mx-auto">
+                                <img class="p-1" src="assets/img/bootstrap/bootstrap.png" alt="logo bootstrap">
                                 <p class="d-inline-block">Bootstrap
                                     <span class="d-block">intermediaire</span>
                                 </p>
 
                             </li>
-                            <li>
+                            <li class="col-12 mx-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
                                     class="bi bi-git" viewBox="0 0 16 16">
                                     <path
@@ -141,7 +173,7 @@
                                     <span class="d-block">intermediaire</span>
                                 </p>
                             </li>
-                            <li>
+                            <li class="col-12 mx-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
                                     <path
@@ -161,16 +193,16 @@
         <!-- PARCOURS -->
 
         <div class="tab-pane fade" id="career" role="tabpanel" aria-labelledby="career-tab">
-            <div class="container mt-5">
+            <div class="container-lg container-fluid mt-5">
                 <div class="row">
-                    <div class="career-box col-md-4 col-12 border border-2 p-5 mx-auto my-3">
+                    <div class="career-box col-md-5 col-10 border border-2 p-5 mx-auto my-3 d-flex flex-column">
                         <h4 class="mb-3">Formation en ligne HTML et CSS</h4>
                         <p>2021 - 2022 <br>
                             Udemy</p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#udemy-modal">
-                            + d'info
+                        <button type="button" class="btn rounded-pill info-button align-self-center mt-2"
+                            data-bs-toggle="modal" data-bs-target="#udemy-modal">
+                            + d'infos
                         </button>
 
                         <!-- Modal -->
@@ -179,12 +211,23 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header border-bottom border-dark">
-                                        <h5 class="modal-title" id="udemy-modal-Label">Formation en ligne HTML et CSS</h5>
+                                        <h5 class="modal-title" id="udemy-modal-Label">Infos formation en ligne HTML et
+                                            CSS</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Qand j'ai commencé cette formation </p>
+                                        <p>J'ai commencé cette formation sans aucune connaissance de codage,
+                                            et quand je l'ai terminé, j'avais les connaissances pour coder mon premier
+                                            site,
+                                            qui est un portfolio que vous pouvez voir dans la section "portfolio" de ce
+                                            CV.
+                                            Pour parler plus en détail de cette formation,
+                                            il s'agit d'une série de cours vidéo avec des leçons et des exercices à
+                                            réaliser.
+                                            En cas de question ou de problème, il était possible de poser des questions
+                                            à un professeur
+                                            pour avoir des réponses et des conseils.</p>
                                     </div>
                                     <div class="modal-footer border-top border-dark">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
@@ -195,14 +238,14 @@
                         </div>
                     </div>
 
-                    <div class="career-box col-md-4 col-12 border border-2 p-5 mx-auto my-3">
+                    <div class="career-box col-md-5 col-10 border border-2 p-5 mx-auto my-3 d-flex flex-column">
                         <h4 class="mb-3">Développeur web & web mobile</h4>
                         <p>2022 - en cours <br>
                             La Manu - École supérieur des métiers du numérique</p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#laManu-modal">
-                            + d'info
+                        <button type="button" class="btn rounded-pill info-button align-self-center mt-2"
+                            data-bs-toggle="modal" data-bs-target="#laManu-modal">
+                            + d'infos
                         </button>
 
                         <!-- Modal -->
@@ -211,12 +254,16 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header border-bottom border-dark">
-                                        <h5 class="modal-title" id="laManu-modal-Label">La Manu</h5>
+                                        <h5 class="modal-title" id="laManu-modal-Label">Infos formation Développeur web
+                                            & web mobile</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        test la Manu
+                                        <p>Il s'agit d'une formation intensive et complète de 6 mois, validé par un
+                                            titre professionnel de niveau 5 qui enseigne le HTML, CSS, Javascript, PHP,
+                                            MySQL etc. Et qui enseigne également les méthodes de travail utilisées en
+                                            entreprise afin d'en ressortir développeur web à part entière.</p>
                                     </div>
                                     <div class="modal-footer border-top border-dark">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
@@ -228,14 +275,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="career-box col-md-4 col-12 border border-2 p-5 mx-auto my-3">
-                        <h4 class="mb-3">CAP Maintenance de véhicules particuliers</h4>
+                    <div class="career-box col-md-5 col-10 border border-2 p-5 mx-auto my-3 d-flex flex-column">
+                        <h4 class="mb-3">CAP Maintenance de véhicules automobile</h4>
                         <p>2020 - 2021 <br>
                             École des pros</p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#mechanic-modal">
-                            + d'info
+                        <button type="button" class="btn rounded-pill info-button align-self-center mt-2"
+                            data-bs-toggle="modal" data-bs-target="#mechanic-modal">
+                            + d'infos
                         </button>
 
                         <!-- Modal -->
@@ -244,12 +291,14 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header border-bottom border-dark">
-                                        <h5 class="modal-title" id="mechanic-modal-Label">CAP</h5>
+                                        <h5 class="modal-title" id="mechanic-modal-Label">Infos CAP mécanique</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        test CAP
+                                        <p>Il s'agit d'une formation par correspondance avec des cours en ligne et 12
+                                            semaines de stage, qui m'ont permis d'acquérir les bases de la mécanique
+                                            automobile.</p>
                                     </div>
                                     <div class="modal-footer border-top border-dark">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
@@ -263,59 +312,36 @@
             </div>
         </div>
 
-
         <!-- PORTFOLIO -->
 
         <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="card mx-auto border border-3 card-size">
-                            <a href="first-portfolio/index.html">
-                                <div class="card-body text-dark text-center p-0">
-                                    <h5 class="card-title py-2">Site portfolio</h5>
-                                    <p class="border-top border-2 border-dark">Mon premier vrai site, que j'ai codé pour
-                                        m'entrainer</p>
-                                    <img src="img/site-portfolio.png" class="card-img-top" alt="test">
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-6 card mx-auto my-4 border border-3 card-size">
+                        <a href="first-portfolio/index-first-portfolio.html">
+                            <div class="card-body text-dark text-center p-0">
+                                <h5 class="card-title py-2">Site portfolio</h5>
+                                <p class="border-top border-2 border-dark">Mon premier site web, que j'ai codé pour <br>
+                                    m'entrainer au html et css</p>
+                                <img src="assets/img/site-portfolio.png" class="card-img-top"
+                                    alt="image de la page d'accueil de mon premier site qui est un portfolio">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 card mx-auto my-4 border border-3 card-size">
+                        <a href="shifumi/index-shiffumi.html">
+                            <div class="card-body text-dark text-center p-0">
+                                <h5 class="card-title py-2">Shifumi pokémon</h5>
+                                <p class="border-top border-2 border-dark">Un shifumi version pokémon que j'ai codé pour
+                                    <br> m'entrainer au javascript</p>
+                                <img src="assets/img/shifumi-pokemon.png" class="card-img-top"
+                                    alt="image de mon shifumi version pokémon">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <!-- CONTACT -->
-
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <form action="">
-                <div class="container border border-dark p-5 my-5 text-dark rounded-3" id="container-contact">
-                    <div class="row">
-                        <legend>Contactez-moi :</legend>
-                        <div class="col-md col-12 text-center pe-5">
-                            <label class="d-block mt-5 mb-1" for="mail" id="info-mail">Votre adresse mail :</label>
-                            <input class="input-size mb-5 rounded-3" type="email" name="mail" id="mail">
-
-                            <label class="d-block mb-1" for="object" id="info-object">L'objet de votre mail :</label>
-                            <input class="input-size rounded-3" type="text" name="object" id="object">
-                        </div>
-
-                        <div class="col-md-6 col-12 text-md-start text-center">
-                            <label class="d-block mb-1 mt-5" for="message">Votre message :</label>
-                            <textarea class="rounded-3" name="message" id="message" cols="40" rows="5"></textarea>
-                        </div>
-                    </div>
-                    <div class="row my-4 text-center">
-                        <div class="d-flex justify-content-center">
-                            <input class="rounded-pill px-2 py-1" type="submit" value="Envoyer" id="send-button">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-
 
         <!-- QUALITÉS -->
 
@@ -323,20 +349,20 @@
             <div class="container" id="quality">
                 <div class="row">
                     <div class="col-md-5 col-12 text-center m-4 p-4">
-                        <img src="img/curieux/suspect.png" alt="image qui représente une loupe">
+                        <img src="assets/img/curieux/suspect.png" alt="image qui représente une loupe">
                         <p class="d-inline fs-2 mx-4">Curieux</p>
                     </div>
                     <div class="col-md-5 col-12 text-center m-4 p-4">
-                        <img src="img/serieux/soldat.png" alt="image qui représente un soldat au garde-à-vous">
-                        <p class="d-inline fs-2 mx-4">serieux</p>
+                        <img src="assets/img/serieux/soldat.png" alt="image qui représente un soldat au garde-à-vous">
+                        <p class="d-inline fs-2 mx-4">sérieux</p>
                     </div>
                     <div class="col-md-5 col-12 text-center m-4 p-4">
-                        <img src="img/travailleur/poste-de-travail.png"
+                        <img src="assets/img/travailleur/poste-de-travail.png"
                             alt="image qui représente une personne assise devant son bureau en train de travailler">
                         <p class="d-inline fs-2 mx-4">Travailleur</p>
                     </div>
                     <div class="col-md-5 col-12 text-center m-4 p-4">
-                        <img src="img/motivation/muscle.png"
+                        <img src="assets/img/motivation/muscle.png"
                             alt="image qui représente un bras qui contracte son biceps">
                         <p class="d-inline fs-2 mx-4">Motivé</p>
                     </div>
@@ -350,16 +376,17 @@
         <div class="tab-pane fade" id="hobbies" role="tabpanel" aria-labelledby="hobbies-tab">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-4 p-4 my-4 mx-auto border border-2">
-                        <img src="img/piano/icone-piano.png" alt="icone de piano">
+                    <div class="col-md-4 col-10 p-4 my-4 mx-auto border border-2">
+                        <img src="assets/img/piano/icone-piano.png" alt="icone de piano">
                         <p class="d-inline fs-2 mx-3">Piano</p>
                     </div>
-                    <div class="col-4 p-4 my-4 mx-auto border border-2">
-                        <img src="img/sport/running.png" alt="icone qui représente une personne faisant du jogging">
+                    <div class="col-md-4 col-10 p-4 my-4 mx-auto border border-2">
+                        <img src="assets/img/sport/running.png"
+                            alt="icone qui représente une personne faisant du jogging">
                         <p class="d-inline fs-2 mx-3">Sport</p>
                     </div>
-                    <div class="col-5 p-4 my-4 mx-auto border border-2">
-                        <img src="img/manga/anime.png"
+                    <div class="col-md-5 col-10 p-4 my-4 mx-auto border border-2">
+                        <img src="assets/img/manga/anime.png"
                             alt="icone qui représente les yeux d'un personnage d'anime dans une télé">
                         <p class="d-inline fs-2 mx-3">Manga / Anime</p>
                     </div>
@@ -423,6 +450,8 @@
                                         title="sport icônes">Sport icônes créées par Freepik - Flaticon</a></p>
                                 <p><a href="https://www.flaticon.com/fr/icones-gratuites/travail"
                                         title="travail icônes">Travail icônes créées par catkuro - Flaticon</a></p>
+                                <p><a href="https://www.flaticon.com/free-icons/php" title="php icons">Php icons created by Freepik - Flaticon</a></p>
+
                             </div>
                             <div class="modal-footer border-top border-dark">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
@@ -439,7 +468,7 @@
 
             <div class="col-md col-3 my-auto text-start text-md-center">
                 <a href="https://www.linkedin.com/in/manson-decobecq-66b907237/" target="_blank"><img
-                        src="img/linkedin/linkedin.png" alt="logo de linkedin"></a>
+                        src="assets/img/linkedin/linkedin.png" alt="logo de linkedin"></a>
             </div>
         </div>
     </footer>

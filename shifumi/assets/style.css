@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'pokemon';
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1{
+    margin: 0.7em;
+}
+
+h2{
+    position: absolute;
+    top: 3.2em;
+    right: 36%;
+    z-index: 2;
+    transform: scale(2);
+}
+
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    width: 13em;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -5;
+    opacity: 90%;
+}
+
+#dialogue {
+    width: 40em;
+    height: 7em;
+    position: absolute;
+    top: 0em;
+    z-index: -1;
+}
+
+#victoryBox{
+    position: absolute;
+    top: 0.2em;
+    width: 100%;
+    height: 15em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#victoryDialogue{
+    width: 60em;
+    height: 15em;
+}
+
+#resetBtn{
+    width: 17em;
+    height: 5em;
+    padding: 0;
+    position: absolute;
+    top: 18em;
+    border-radius: 20em;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resetImg{
+    width: 100%;
+    opacity: 80%;
+}
+
+#resetText{
+    position: absolute;
+    top: 1.4em;
+    left: 5em;
+    z-index: 3;
+    transform: scale(1.8);
+    font-family: 'pokemon';
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.pokeball{
+    width: 2em;
+    height: 2em;
+}
+
+#redBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#blueBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#redPoint{
+    color: red;
+    font-size: 1.2em;
+}
+
+#bluePoint{
+    color: rgb(95, 138, 255);
+    font-size: 1.2em;
+}
+
+#rockBtn {
+    width: 100%;
+}
+
+#paperBtn {
+    width: 100%;
+}
+
+#scissorsBtn {
+    width: 100%;
+}
+
+#fightZone {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#versus {
+    height: 15em;
+
+}
+
+#playerCase {
+    width: 18em;
+    height: 18em;
+    border: 3px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#red {
+    height: 22em;
+}
+
+#computerCase {
+    width: 18em;
+    height: 18em;
+    border: 3px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blue {
+    height: 22em;
+}
+
+#playBtn {
+    width: 13em;
+    height: 5em;
+    padding: 0;
+    margin: 0 45%;
+    position: absolute;
+    bottom: 1em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#fight {
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'pokemon';
+    src: url(font/Pokemon.ttf);
+}
+
+
+/* animation */
+
+.pulsate-bck:hover {
+	-webkit-animation: pulsate-bck 0.8s ease-in-out infinite both;
+	        animation: pulsate-bck 0.8s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  

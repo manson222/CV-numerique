@@ -169,9 +169,10 @@ footer img{
 
 @media all and (max-width: 768px){
     header{height: 100px;}
+    header img{height: 300px;}
     #profil{width: 10em; margin-top: 1em;}
     #info-contact{top: 8em;}
-    #language{border: none;}
+    #language{border-right: none; border-bottom: 1px white solid;}
     #frameworks{border-top: 1px white solid; padding-top: 3em;}
     .nav-tabs{border: none;}
     #container-contact{width: 25em;}

@@ -1,0 +1,1 @@
+finir le placement de la section compétence et gérer la taille des texte dans cette même section

@@ -159,6 +159,10 @@ footer img{
     background-color: #7D8491;
 }
 
+.level{
+    font-size: 0.7em;
+}
+
 .row{
     --bs-gutter-x: 0;
 }

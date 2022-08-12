@@ -2,6 +2,9 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'pokemon';
+    /* background-image: url(img/arena.png);
+    background-position: center center;
+    background-size: cover; */
 }
 
 header{
@@ -38,14 +41,31 @@ li {
     align-self: center;
 }
 
-#bg {
+#test{
+    display: flex;
+    justify-content: center;
+}
+
+#bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-image: url(img/arena.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: -5;
+    opacity: 90%;
+}
+
+/* #bg {
     width: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
     z-index: -5;
     opacity: 90%;
-}
+} */
 
 #dialogue {
     width: 40em;
